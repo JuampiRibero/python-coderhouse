@@ -16,8 +16,8 @@ La navegación del sitio web permite ver un listado de los posteos y acceder a c
 3. Accedé al link que sale en la terminal y comenzá a navegar por el sitio web.
 
 
-### Autor
+## Autor
 
 Juan Pablo Ribero Mazzoni
 
-2022 - Proyecto Final de Curso React Js de CoderHouse
+2022 - Primera Entrega Proyecto Final de Curso Python de CoderHouse
