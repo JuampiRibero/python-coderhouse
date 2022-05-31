@@ -17,6 +17,8 @@ Por último se puede agregar un avatar a un determinado usuario.
 
 3. Accedé a *http://127.0.0.1:8000/AppBlog/* para comenzar a navegar por el sitio web.
 
+4. Dejo el link al Google Drive donde se encuentra el video en alta calidad *https://drive.google.com/file/d/1TiGGiCe3nqsZsI6yj3Mb5LqXcNjF-S5s/view?usp=sharing*, ya que el que subí al repositorio es de baja calidad porque no podía superar los 25MB. 
+
 
 ## Autor
 
