@@ -1,7 +1,9 @@
 # AppBlog (Primera Entrega Proyecto Final Python)
 
-El proyecto consiste en un blog de viajes llamado "Pasaporte en Mano". El mismo pretende brindar a todos aquellos viajeros que quieran contar alguna experiencia, brindar alguna noticia de actualidad, puedan hacerlo mediante un posteo y que luego cualquier persona pueda acceder a él.
-La navegación del sitio web permite ver un listado de los posteos y acceder a cada uno de ellos para su lectura. Tambíen permite realizar un posteo y buscar un posteo por su título.
+El proyecto consiste en un blog de viajes llamado "Pasaporte en Mano". El mismo pretende que todos aquellos viajeros que quieran contar alguna experiencia, brindar alguna noticia de actualidad, puedan hacerlo mediante un posteo y que luego cualquier persona pueda acceder a él.
+La navegación del sitio web permite ver un listado de posteos, acceder a cada uno de ellos para su lectura y buscar posteos por su título. Tambíen permite hacer, editar y borrar un posteo sólo para usuarios registrados.
+A su vez, el sitio cuenta con la posibilidad de registrar un usuario. En caso de contar con uno, se puede iniciar sesión y editar dicho usuario. También cuenta con cierre de sesión.
+Por último se puede agregar un avatar a un determinado usuario.
 
 ## Instalación
 
@@ -13,11 +15,11 @@ La navegación del sitio web permite ver un listado de los posteos y acceder a c
    python manage.py runserver
    ```
 
-3. Accedé al link que sale en la terminal y comenzá a navegar por el sitio web.
+3. Accedé a *http://127.0.0.1:8000/AppBlog/* para comenzar a navegar por el sitio web.
 
 
 ## Autor
 
 Juan Pablo Ribero Mazzoni
 
-2022 - Primera Entrega Proyecto Final de Curso Python de CoderHouse
+2022 - Entrega Proyecto Final de Curso Python de CoderHouse

@@ -2,6 +2,12 @@
 
 {% load static %}
 
+{% block contenido_avatar %}
+
+    <img class='mx-2' height='50px' src='{{url}}' alt='Avatar' title='Avatar'>
+
+{% endblock %}
+
 {% block titulo_header %}
 
     <h1>Sobre Nosotros</h1>
@@ -15,10 +21,13 @@
         <div class='container px-4 px-lg-5'>
             <div class='row gx-4 gx-lg-5 justify-content-center'>
                 <div class='col-md-10 col-lg-8 col-xl-7'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+                    <p>Este blog te contará las aventuras y desventuras de dos personajes por las distintas latitudes de este mundo.</p>
+                    <p>Al igual que muchos, estamos dando nuestros primeros pasos de exploradores, y de a poco hemos empezado a contemplar aquellas tierras descubiertas, con civilizaciones colmadas de cultura, vida y un perpetuo legado de historia.</p>
+                    <p>Para compartir aventuras es importante conocernos un poco, hasta donde las palabras puedan alcanzar. Hoy nos toca compartir nuestro pequeño rincón y dejar que leas una parte de nuestra historia. La solapa de un libro brinda datos sobre el autor. De igual manera, nuestra solapa te entregará a los autores de este libro de viaje.</p>
                     <img class='img-fluid' src='{% static "AppBlog/assets/img/about.jpg" %}' alt='Sobre Nosotros' title='Sobre Nosotros' loading='lazy'>
+                    <button type='button' class='btn btn-primary position-relative mt-3'>
+                        <a href='{% url "Inicio" %}' style='color: white;'>IR A INICIO</a>
+                    </button>
                 </div>
             </div>
         </div>

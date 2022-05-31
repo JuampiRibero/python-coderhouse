@@ -15,7 +15,25 @@
             <title>Pasaporte en Mano - Postear</title>
 
         {% elif id == 4 %}
-            <title>Pasaporte en Mano - Buscar</title>
+            <title>Pasaporte en Mano - Buscar Posteo</title>
+
+        {% elif id == 5 %}
+            <title>Pasaporte en Mano - Iniciar Sesión</title>
+
+        {% elif id == 6 %}
+            <title>Pasaporte en Mano - Registro</title>
+
+        {% elif id == 7 %}
+            <title>Pasaporte en Mano - Lista de Posteos</title>
+
+        {% elif id == 8 %}
+            <title>Pasaporte en Mano - Editar Posteo</title>
+
+        {% elif id == 9 %}
+            <title>Pasaporte en Mano - Editar Usuario</title>
+
+        {% elif id == 10 %}
+            <title>Pasaporte en Mano - Agregar Imagen</title>
 
         {% endif %}
 
@@ -41,8 +59,25 @@
                     <ul class='navbar-nav ms-auto py-4 py-lg-0'>
                         <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4' href='{% url "Inicio" %}'>Inicio</a></li>
                         <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4' href='{% url "sobreNosotros" %}'>Sobre Nosotros</a></li>
-                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4' href='{% url "hacerPosteo" %}'>Postear</a></li>
+                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4' href='{% url "listaPosteos" %}'>Posteos</a></li>
                         <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4' href='{% url "Buscar" %}'>Buscar</a></li>
+                        {% if not user.is_authenticated %}
+                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4 btn btn-primary mx-2' href='{% url "Register" %}'>Registro</a></li>
+                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4 btn btn-primary mx-2' href='{% url "Login" %}'>Iniciar Sesión</a></li>
+                        {% endif %}
+                        {% if user.is_authenticated %}
+                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4 text-center font-monospace fst-italic' href='{% url "agregarAvatar" %}'>¡Hola, {{user.username}}!</br><span class=''>Agregar Avatar</span></a></li>
+                        <li class='mx-1'>
+                        {% with first_image=user.avatar_set.first %} 
+                            {% if first_image %} 
+                                <a href='{{ first_image.imagen.url }}' target='_blank'>
+                                <img src='{{ first_image.imagen.url }}' height='60px'>
+                            {% endif %}
+                        {% endwith %}
+                        </li>   
+                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4 btn btn-primary mx-2' href='{% url "Logout" %}'>Cerrar Sesión</a></li>
+                        <li class='nav-item'><a class='nav-link px-lg-3 py-3 py-lg-4 btn btn-primary mx-2' href='{% url "editarUsuario" %}'>Editar Usuario</a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
