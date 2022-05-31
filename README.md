@@ -22,4 +22,4 @@ Por último se puede agregar un avatar a un determinado usuario.
 
 Juan Pablo Ribero Mazzoni
 
-2022 - Entrega Proyecto Final de Curso Python de CoderHouse
+2022 - Proyecto Final de Curso Python de CoderHouse
