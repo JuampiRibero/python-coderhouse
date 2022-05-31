@@ -1,4 +1,4 @@
-# AppBlog (Primera Entrega Proyecto Final Python)
+# AppBlog (Proyecto Final Python)
 
 El proyecto consiste en un blog de viajes llamado "Pasaporte en Mano". El mismo pretende que todos aquellos viajeros que quieran contar alguna experiencia, brindar alguna noticia de actualidad, puedan hacerlo mediante un posteo y que luego cualquier persona pueda acceder a él.
 La navegación del sitio web permite ver un listado de posteos, acceder a cada uno de ellos para su lectura y buscar posteos por su título. Tambíen permite hacer, editar y borrar un posteo sólo para usuarios registrados.
